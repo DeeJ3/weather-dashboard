@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,28 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Weather Dashboard</title>
 </head>
-<body>
-    
-    
 
-<script src="assets/js/script.js"></script>
+<body>
+
+    <div id="input-container">
+        <input id="city-input" placeholder="Search For a City">
+        <button id="search-btn">Search</button>
+    </div>
+    <div id="current-forecast-container">
+        <h1>Current Forecast</h1>
+        <h2 id="cityName">
+            </h1>
+            <h4 id="temp"></h4>
+            <h4 id="humidity"></h4>
+            <h4 id="wind"></h4>
+            <h4 id="uv"></h4>
+    </div>
+    <div id="five-day-container">
+        <h1>Five Day Forecast</h1>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
